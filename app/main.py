@@ -8,7 +8,7 @@ from app.shop import Shop
 def shop_trip() -> None:
     customers = []
     shops = []
-    with open("config.json", "r") as config_file:
+    with open("../tests/config.json", "r") as config_file:
         info = json.load(config_file)
         fuel_price = info["FUEL_PRICE"]
 
